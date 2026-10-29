@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // DEMOPRODUCTEN: pas prijzen en voorraad aan voor livegang.
 const products = [
-  {id:'longsleeve-black',name:'AMORE Heavyweight Longsleeve',color:'Washed Black',price:5495,category:'Longsleeves',sizes:['S','M','L','XL'],available:true},
+  {id:'longsleeve-black',name:'AMORE LONGSLEEVE',color:'Washed Black',price:5495,category:'Longsleeves',sizes:['S','M','L','XL'],available:true},
   {id:'longsleeve-grey',name:'AMORE Heavyweight Longsleeve',color:'Washed Charcoal',price:5495,category:'Longsleeves',sizes:['S','M','L','XL'],available:true},
   {id:'tee-black',name:'AMORE Essential Tee',color:'Black',price:3495,category:'T-shirts',sizes:['S','M','L','XL'],available:true}
 ];
