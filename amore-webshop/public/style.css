@@ -26,3 +26,25 @@ body.detail-open{overflow:hidden}
 .detail-add:hover{background:#ccc}
 .detail-note{color:#888;font-size:11px;line-height:1.7;margin-top:20px}
 @media(max-width:760px){.product-detail-backdrop{padding:0;align-items:stretch}.product-detail{display:block;max-height:100vh;width:100%;border:0}.detail-gallery{min-height:0;height:400px}.detail-gallery img{max-height:400px}.detail-info{padding:35px 25px 45px}.detail-close{top:12px;right:12px}}
+
+
+/* AMORE animated homepage logo — subtle luxury motion */
+.hero-logo{
+  transform-origin:center center;
+  will-change:transform;
+  animation:amore-logo-appear 1.35s ease-out both,amore-logo-float 6s ease-in-out 1.35s infinite;
+  filter:drop-shadow(0 0 0 rgba(255,255,255,0));
+  transition:filter .5s ease;
+}
+.hero-logo:hover{filter:drop-shadow(0 0 13px rgba(255,255,255,.28))}
+@keyframes amore-logo-appear{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes amore-logo-float{
+  0%,100%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-13px) scale(1.035)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-logo{animation:none;transform:none;filter:none;transition:none}
+}
